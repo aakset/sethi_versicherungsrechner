@@ -12,10 +12,10 @@ function Summe() {
   };
 
   return (
-    <div className="SummeInput">
+    <div className="Summe">
       <h1>Versicherungübernahme</h1>
-      <div className="InputSumme">
-        <label htmlFor="inputSumme">Input Summe:</label>
+      <div className="Inputs">
+        <label htmlFor="inputSumme">Versicherungssumme: </label>
         <input
           type="number"
           id="inputSumme"
@@ -24,8 +24,8 @@ function Summe() {
         />
       </div>
 
-      <div className="WertInput">
-        <label htmlFor="inputWert">Input Wert:</label>
+      <div className="Inputs">
+        <label htmlFor="inputWert">Versicherungswert: </label>
         <input
           type="number"
           id="inputWert"
@@ -33,9 +33,9 @@ function Summe() {
           onChange={(e) => setInputWert(parseFloat(e.target.value))}
         />
       </div>
-      
-      <div className="SchadenInput">
-        <label htmlFor="inputSchaden">Input Schaden:</label>
+
+      <div className="Inputs">
+        <label htmlFor="inputSchaden">Schadenssumme: </label>
         <input
           type="number"
           id="inputSchaden"
