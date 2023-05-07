@@ -106,3 +106,12 @@ li a:hover {
   color: #ffffff;
   transform: translateY(+5px);
 }
+
+.progress-bar {
+  height: 5px;
+  background-color: #187c54;
+  position: fixed;
+  top: 10px;
+  transition: width 0.3s ease-in-out;
+  border: 3px solid #1c5e44;
+}
