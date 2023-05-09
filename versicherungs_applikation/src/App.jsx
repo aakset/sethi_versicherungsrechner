@@ -5,6 +5,9 @@ import { Home } from "./Pages/Home";
 import Erste from "./Pages/Erste";
 import Summe from "./Pages/Summe";
 import Durchschnitt from "./Pages/Durchschnitt";
+import About from './Pages/About';
+import Kontakt from './Pages/Kontakt';
+
 
 function App() {
   const location = useLocation();
@@ -30,12 +33,20 @@ function App() {
 
   return (
     <>
+      <ul className="navigation_ul">
+        <li> <Link to="/">Home</Link> </li>
+        <li> <Link to="/About">Über uns</Link></li>
+        <li> <Link to="/Kontakt">Kontakt</Link></li>
+      </ul>
+
       <div className="progress-bar" style={{ width: `${progress}%` }}></div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/erste" element={<Erste />} />
         <Route path="/summe" element={<Summe />} />
         <Route path="/durchschnitt" element={<Durchschnitt />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/kontakt" element={<Kontakt />} />
       </Routes>
     </>
   );

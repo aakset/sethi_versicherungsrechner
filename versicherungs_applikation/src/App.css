@@ -29,12 +29,14 @@
 }
 
 
+/* Navbar */
+
 .navigation_ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #565656d8;
+  background-color: #000000d8;
 }
 
 li {
@@ -51,8 +53,10 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #5e5e5e;
 }
+
+/* Buttons */
 
 .start_button {
   background-color: rgb(255, 255, 255);
@@ -70,7 +74,7 @@ li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; 
+  height: 100vh;
 }
 
 .start_button:hover {
@@ -107,11 +111,13 @@ li a:hover {
   transform: translateY(+5px);
 }
 
+
+/* Progress-bar */
+
 .progress-bar {
-  height: 5px;
-  background-color: #187c54;
+  height: 8px;
+  background-color: #26a52a;
   position: fixed;
-  top: 10px;
+  top: 60px;
   transition: width 0.3s ease-in-out;
-  border: 3px solid #1c5e44;
 }
