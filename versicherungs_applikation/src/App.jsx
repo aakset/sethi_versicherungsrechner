@@ -35,8 +35,8 @@ function App() {
     <>
       <ul className="navigation_ul">
         <li> <Link to="/">Home</Link> </li>
-        <li> <Link to="/About">Über uns</Link></li>
-        <li> <Link to="/Kontakt">Kontakt</Link></li>
+        <li> <Link to="/About">Über uns</Link> </li>
+        <li> <Link to="/Kontakt">Kontakt</Link> </li>
       </ul>
 
       <div className="progress-bar" style={{ width: `${progress}%` }}></div>
