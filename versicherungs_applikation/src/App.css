@@ -111,7 +111,6 @@ li a:hover {
 .progress-bar {
   height: 8px;
   background-color: #26a52a;
-  position: fixed;
   top: 60px;
   transition: width 0.3s ease-in-out;
 }
