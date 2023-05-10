@@ -7,12 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #ffffff;
   min-height: 100vh;
@@ -122,4 +116,6 @@ li a:hover {
   transition: width 0.3s ease-in-out;
 }
 
-
+::-webkit-scrollbar {
+  display: none;
+}
