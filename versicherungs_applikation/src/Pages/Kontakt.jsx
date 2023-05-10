@@ -1,5 +1,5 @@
 import React from "react";
-import "../NavBarInhalt.css";
+import "../Kontakt.css";
 
 function Kontakt() {
     

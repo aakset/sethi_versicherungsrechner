@@ -56,4 +56,8 @@ h3 {
     margin-right: 10px; 
   }
 
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   
