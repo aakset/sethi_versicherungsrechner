@@ -4,7 +4,7 @@ export function Home() {
   return (
     <div className="start_button_div">
     <Link to="/erste">
-      <button className="start_button">Versicherungübernahme berechnen</button>
+      <button className="start_button">Versicherungen berechnen</button>
     </Link>
     </div>
   );

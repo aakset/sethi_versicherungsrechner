@@ -1,11 +1,11 @@
-FROM node:14-alpine
+FROM openjdk:17-jdk-slim
 
 WORKDIR /app
 
-RUN git clone https://github.com/aakset/sethi_versicherungsrechner.git
+COPY . .
 
-WORKDIR /app/sethi_versicherungsrechner
+RUN npm ci
 
-RUN npm install
+EXPOSE 3000
 
-CMD ["npm", "start"]
+ENTRYPOINT ["npm", "start"]

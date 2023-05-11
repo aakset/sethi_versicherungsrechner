@@ -30,6 +30,7 @@ function Durchschnitt() {
         <img src={lion} alt="lion" />
         <img src={dog} alt="dog" />
       </div>
+
     </div>
   );
 }

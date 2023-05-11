@@ -6,20 +6,20 @@ function Kontakt() {
   return (
     <div className="container">
       <form action="">
-        <label htmlFor="firstname">Vorname</label>
+        <label htmlFor="firstname">Vorname & Nachname</label>
         <input
           type="text"
           id="fname"
           name="firstname"
-          placeholder="Ihr Vorname..."
+          placeholder="Ihr Vor- und Nachname..."
         />
 
-        <label htmlFor="lastname">Nachname</label>
+        <label htmlFor="lastname">E-Mail</label>
         <input
           type="text"
           id="lname"
           name="lastname"
-          placeholder="Ihr Nachname..."
+          placeholder="Ihre E-Mail..."
         />
 
         <label htmlFor="Grund">Grund</label>

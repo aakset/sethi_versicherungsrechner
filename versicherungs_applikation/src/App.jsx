@@ -6,7 +6,9 @@ import Erste from "./Pages/Erste";
 import Summe from "./Pages/Summe";
 import Durchschnitt from "./Pages/Durchschnitt";
 import About from './Pages/About';
+import Hilfe from './Pages/Hilfe';
 import Kontakt from './Pages/Kontakt';
+import QuadM from './Pages/QuadM';
 
 
 function App() {
@@ -20,6 +22,9 @@ function App() {
         progressPercentage = 33;
         break;
       case "/summe":
+        progressPercentage = 100;
+        break;
+      case "/quadm":
         progressPercentage = 100;
         break;
       case "/durchschnitt":
@@ -37,6 +42,8 @@ function App() {
         <li> <Link to="/">Home</Link> </li>
         <li> <Link to="/About">Über uns</Link> </li>
         <li> <Link to="/Kontakt">Kontakt</Link> </li>
+        <li> <Link to="/Hilfe">Hilfe</Link> </li>
+        
       </ul>
 
       <div className="progress-bar" style={{ width: `${progress}%` }}></div>
@@ -46,7 +53,10 @@ function App() {
         <Route path="/summe" element={<Summe />} />
         <Route path="/durchschnitt" element={<Durchschnitt />} />
         <Route path="/about" element={<About />} />
+        <Route path="/hilfe" element={<Hilfe />} />
         <Route path="/kontakt" element={<Kontakt />} />
+        <Route path="/quadm" element={<QuadM />} />
+
       </Routes>
     </>
   );
