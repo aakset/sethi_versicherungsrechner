@@ -15,8 +15,8 @@ Step-by-Step Installation kann man mit folgenden Schritten durchführen:
 
  - 
     `git clone https://github.com/aakset/sethi_versicherungsrechner`
-
- -     `cd versicherungs_applikation`
+ - 
+     `cd versicherungs_applikation`
  - 
     `npm install`
  - 
