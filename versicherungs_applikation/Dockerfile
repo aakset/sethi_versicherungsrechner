@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-slim
+FROM node:16.7.0-bullseye-slim
 
 WORKDIR /app
 
