@@ -22,6 +22,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./Versicherungsrechner/versicherungs_applikation/Dockerfile
+          file: ./versicherungs_applikation/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/versicherungsrechner:${{ github.sha }}
