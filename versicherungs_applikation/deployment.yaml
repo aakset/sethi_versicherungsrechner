@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: versicherung
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: versicherung
+  template:
+    metadata:
+      labels:
+        app: versicherung
+    spec:
+      containers:
+      - name: versicherung-container
+        image: ghcr.io/aakset/versicherung:v3
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: versicherung
+  name: versicherung-m210-hosting
+spec:
+  ports:
+  - name: 8080-tcp
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: versicherung
+  sessionAffinity: None
+  type: ClusterIP
+---
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: versicherung
+  name: versicherung-m210-hosting
+spec:
+  port:
+    targetPort: 8080-tcp
+  to:
+    kind: Service
+    name: versicherung-m210-hosting
+  tls:
+    termination: edge   
+    insecureEdgeTerminationPolicy: Redirect
